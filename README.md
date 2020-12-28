@@ -6,10 +6,10 @@ This project relies on the [python-OBD library](https://github.com/brendan-w/pyt
 Tested on version 0.7.1 in a Hyundai Veloster - 2016
 
 At the moment this project reads data from the On Board Diagnostic (OBD-II) port on a car,
-  conected to a Raspberry Pi
+  conected to a Raspberry Pi.
 Uses ASync comands to watch for updates from certain PIDs and writes them to a csv file 
-  when it receives a new value
-Can read through csv file and POST to a database using API calls
+  when it receives a new value.
+Can read through csv file and POST to a database using API calls.  
   
   Future plans include:
   -Watching for more data
