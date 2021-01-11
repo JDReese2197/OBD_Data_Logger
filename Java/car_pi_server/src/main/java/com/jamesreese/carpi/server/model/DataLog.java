@@ -59,4 +59,9 @@ public class DataLog {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
+	@Override
+	public String toString() {
+		return "Log " + id + ": " + date + " " + time + " - " + value + " " + dataType;
+	}
 }

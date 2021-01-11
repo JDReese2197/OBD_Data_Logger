@@ -32,7 +32,7 @@ public class JDBCDataLogDAO {
 	public List<DataLog> getLogsByDay(LocalDate date) {
 		List<DataLog> logs = new ArrayList<>();
 		
-		String query = "SELECT * FROM car_log WHERE date_stamp = ? ORDER BY time_stamp DESC";
+		String query = "SELECT * FROM car_log WHERE date_stamp = ? ORDER BY time_stamp ASC";
 		SqlRowSet results = jdbcTemplate.queryForRowSet(query, date);
 		
 		if(!results.next()) {
