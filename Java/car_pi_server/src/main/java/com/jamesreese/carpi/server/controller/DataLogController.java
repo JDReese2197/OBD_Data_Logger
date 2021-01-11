@@ -24,6 +24,13 @@ public class DataLogController {
 	public DataLogController(JDBCDataLogDAO dataLog) {
 		this.dataLogDao = dataLog;
 	}
+	
+	@RequestMapping(path = "/", method = RequestMethod.GET)
+	public String welcomeMessage() {
+		consoleLog.logApiCall("Sent welcome message");
+		
+		return "Welcome to CarPi!";
+	}
 
 	//	Given a DataLog object, posts object to database
 	@RequestMapping(path = "/log", method = RequestMethod.POST)
